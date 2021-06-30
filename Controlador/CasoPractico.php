@@ -57,15 +57,14 @@ $columna = mysqli_fetch_row($resultado);*/
 
 <!-- Paginacion--------------------------------------------------------------------------------------------------------------------------------->
 <div class="pagination">
-    <div class="ir">
-    <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_no . "/" . $total_pages; ?>" required>
-    <button onClick="go2Page();">Ir</button>
-</div>
+  <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_no . "/" . $total_pages; ?>" required>
+  <button onClick="go2Page();">Ir</button>
+
 <script>
   function go2Page() {
     var page = document.getElementById("page").value;
     page = ((page > <?php echo $total_pages; ?>) ? <?php echo $total_pages; ?> : ((page < 1) ? 1 : page));
-    window.location.href = 'CasoPractico.php?page=' + page;
+    window.location.href = 'ejercicio1.php?page=' + page;
   }
 </script>
 
@@ -75,10 +74,10 @@ echo "<div><a href='?page_no=1'>Primera</a></div>";
 } ?>
     
 <div <?php if($page_no <= 1){ echo "class='disabled'"; } ?>>
-<a <?php if($page_no > 1){
-echo "href='?page_no=$previous_page'";
-} ?>>Anterior</a>
-</>
+ <?php if($page_no > 1){
+echo "<a href='?page_no=$previous_page'";
+} ?>Anterior</a>
+</div>
 
 <?php
 if ($total_pages <= 10){  	 
