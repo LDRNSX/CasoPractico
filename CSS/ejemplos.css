@@ -1,0 +1,123 @@
+html{
+	text-align: justify;
+	font-family: 'Rubik', sans-serif;
+}
+
+table{
+	text-align: left;
+	border-collapse: collapse;
+}
+
+table, td, th { border: 1px solid; }
+
+td, th { width: 100px; height: 35px; }
+
+th{
+  text-align: center;
+}
+
+thead{
+	background-color: #9fdbdb;
+}
+
+.centro{
+	text-align: center;
+}
+
+/*nav menu---------------------------------------------------------------------------------------*/
+.vertical-menu {
+  width:10%;
+  float:left;
+}
+
+.vertical-menu a {
+  background-color:#eee;
+  color:black;
+  display:block;
+  padding:12px;
+  text-decoration:none;
+}
+
+.vertical-menu a:hover {
+  background-color:#ccc;
+}
+
+.vertical-menu a:active {
+  background-color:#4CAF50;
+  color:white;
+}
+
+/*Botones de paginacion ejercicio 1----------------------------------------------------------------------*/
+input, button{   
+  height: 40px; 
+}   
+button{
+  width:50px;
+  border-radius: 3px;
+  border-color: inherit;
+}
+button:hover{
+  background-color: #ccc;
+}
+.pagination {
+  padding: 10px;
+  display: flex;   
+  justify-content: center;
+}
+.ir{
+  width:max-content;
+  margin-right:10px ;
+}
+
+.pagination a, li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd; 
+}
+.pagination div a.active {
+  background-color: #ccc;
+  color: white;
+}
+ 
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.formulario input, select{
+  margin: 5px;
+}
+
+
+/*Botones de la tabla----------------------------------------------------*/
+table tr td a {
+  text-decoration: none;
+  display: flex;   
+  justify-content: center;
+}
+
+/*Boton volver-----------------------------------------------------*/
+.volver{
+  text-decoration: none;
+  padding:10px;
+  color:black;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+.volver:hover{
+  background-color: #ccc;
+  color:black;
+}
+
+/*Boton agregar-----------------------------------------------------*/
+.agregar{
+  text-decoration: none;
+  padding:10px;
+  color:black;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+.agregar:hover{
+  background-color: #ccc;
+  color:black;
+}
